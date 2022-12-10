@@ -1,18 +1,25 @@
 import AppBar from "@mui/material/AppBar"
 import Toolbar from "@mui/material/Toolbar"
-import Typography from "@mui/material/Typography"
 import Container from "@mui/material/Container"
-import ScreenShareOutlinedIcon from '@mui/icons-material/ScreenShareOutlined';
+import ScreenShareOutlinedIcon from "@mui/icons-material/ScreenShareOutlined"
+import Button from "@mui/material/Button"
 
-const Header = () => {
+const Header = ({ setDash }) => {
   return (
-    <AppBar position="static" sx={{borderBottom: 'solid'}}>
+    <AppBar position="static" sx={{ borderBottom: "solid" }}>
       <Container maxWidth="xl">
         <Toolbar>
-          <ScreenShareOutlinedIcon fontSize='large'/>
-          <Typography variant="h4" component="div" marginLeft={'8px'}>
+          <Button
+            onClick={setDash}
+            variant="text"
+            size="" // will be decided by sx property
+            color="inherit"
+            startIcon={<ScreenShareOutlinedIcon fontSize="large" />}
+            sx={{ fontSize: "22px" }}
+            fontSize
+          >
             CL share
-          </Typography>
+          </Button>
         </Toolbar>
       </Container>
     </AppBar>

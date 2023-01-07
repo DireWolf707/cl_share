@@ -3,12 +3,12 @@ import { getFirestore, Timestamp } from "firebase/firestore"
 import { getStorage } from "firebase/storage"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBVK0Ba04KwLVbOj4bjt1QpcWBEMaZzqYg",
-  authDomain: "projectmangement-20012.firebaseapp.com",
-  projectId: "projectmangement-20012",
-  storageBucket: "projectmangement-20012.appspot.com",
-  messagingSenderId: "362165896174",
-  appId: "1:362165896174:web:2941395238b4a24b0304ff"
+  apiKey: "AIzaSyAcA7hEwgYVzSW0dHlu35KBgPAuSuuo3XM",
+  authDomain: "clshare-cc44a.firebaseapp.com",
+  projectId: "clshare-cc44a",
+  storageBucket: "clshare-cc44a.appspot.com",
+  messagingSenderId: "31980976829",
+  appId: "1:31980976829:web:26463ab39a6e6de0ed15d4"
 };
 // app
 const app = initializeApp(firebaseConfig)

@@ -54,33 +54,17 @@ const Hero = ({ setNET, setRoomId }) => {
       elevation={5}
       sx={{
         height: "100%",
-        width: 1,
+        width: 2/3,
         border: "solid",
         display: "flex",
-        justifyContent: "space-evenly",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <Paper elevation={10} sx={{ bgcolor: "green", width: 3 / 7, height: "70%" }}>
+      <Paper elevation={10} sx={{ bgcolor: "green", width: "70%", height: "70%" }}>
         <Box sx={{ height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <Typography variant="h3" component="h3" sx={{ color: "whitesmoke" }}>
-            LAN Connect
-          </Typography>
-          <Button variant="contained" color="check" size="large" sx={{ px: 3.2, py: 1.2, mt: 2 }}>
-            Check
-          </Button>
-          <Typography variant="body1" component="p" sx={{ color: "whitesmoke", mt: 1.2 }}>
-            This feature will be added soon!
-          </Typography>
-        </Box>
-      </Paper>
-
-      <Divider orientation="vertical" variant="middle" flexItem />
-
-      <Paper elevation={10} sx={{ bgcolor: "green", width: 3 / 7, height: "70%" }}>
-        <Box sx={{ height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ color: "whitesmoke" }}>
-            NET Connect
+            Room Connect
           </Typography>
           <Button onClick={createRoom} variant="contained" color="check" size="large" sx={{ px: 3.2, py: 1.2, mt: 3.5 }}>
             Create Room

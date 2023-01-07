@@ -20,7 +20,7 @@ const App = () => {
 
       {view == STATE.DASH && (
         <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <Box sx={{ width: 3 / 4, height: "70%" }}>
+          <Box sx={{ width: 3 / 4, height: "70%", display: "flex", justifyContent: "center", alignItems: "center" }}>
             <Hero setNET={() => setView(STATE.NET)} setRoomId={setRoomId} />
           </Box>
         </Box>
